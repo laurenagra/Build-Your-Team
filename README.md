@@ -10,7 +10,8 @@
 - [Status](#status)
 - [Inspired By](#inspired-by)
 - [Acceptance Criteria](#acceptance-criteria)
--[Instructions](#running-this-app)
+- [Testing](#set-up-to-run-tests)
+- [Instructions](#running-this-app)
 
 ## User Story 
 ```
@@ -65,13 +66,13 @@ THEN I exit the application, and the HTML is generated
 
 ## Set Up to Run Tests:
 - open your integrated terminal
-- run npm i to initialize dependences (dependencies include inquirer, fs, and echo)
+- run npm i to initialize dependences (dependencies include inquirer, fs, and jest)
 - run npm install --save-dev jest to install our tester
 - npm run test to check that it works properly!
 
 ## Running This App
 - open index.js in your terminal!
-- run npm i to initialize dependencies
-- run npm run test to run the generator
+- run npm i to initialize dependencies if you haven't already done so 
+- run node index to prompt the generator for questions
 - fill out information and the app will create your team profile!
 
