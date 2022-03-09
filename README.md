@@ -63,9 +63,15 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
+## Set Up to Run Tests:
+- open your integrated terminal
+- run npm i to initialize dependences (dependencies include inquirer, fs, and echo)
+- run npm install --save-dev jest to install our tester
+- npm run test to check that it works properly!
+
 ## Running This App
 - open index.js in your terminal!
-- run npm i to initialize dependencies 
-- run npm start to run the generator
+- run npm i to initialize dependencies
+- run npm run test to run the generator
 - fill out information and the app will create your team profile!
 

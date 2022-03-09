@@ -1,14 +1,14 @@
 {
   "name": "build-your-team",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [User Story](#user-story)\r - [General Information](#general-information)\r - [Website](#website)\r - [Screenshots](#screenshots)\r - [Code Used](#technology-used)\r - [Api Used](#api-used)\r - [Status](#status)\r - [Inspired By](#inspired-by)\r - [Acceptance Criteria](#acceptance-criteria)\r -[Instructions](#running-this-app)",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/laurenagra/Build-Your-Team#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.1",
     "jest": "^27.5.1"
   }
 }
