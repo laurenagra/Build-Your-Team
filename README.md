@@ -10,6 +10,7 @@
 - [Status](#status)
 - [Inspired By](#inspired-by)
 - [Acceptance Criteria](#acceptance-criteria)
+-[Instructions](#running-this-app)
 
 ## User Story 
 ```
@@ -62,4 +63,9 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
+## Running This App
+- open index.js in your terminal!
+- run npm i to initialize dependencies 
+- run npm start to run the generator
+- fill out information and the app will create your team profile!
 
