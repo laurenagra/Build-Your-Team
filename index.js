@@ -43,7 +43,7 @@ function addEmployee() {
       if (role === "Engineer") {
         roleInfo = "Github Username";
       } else if (role === "Intern") {
-        let roleInfo = "school";
+        roleInfo = "school";
       } else {
         roleInfo = "Office Number";
       }
@@ -58,7 +58,7 @@ function addEmployee() {
           {
             type: "list",
             message: "Would you like to add more team members?",
-            choice: ["yes", "no"],
+            choices: ["yes", "no"],
             name: "moreEmployees",
           },
         ])
@@ -118,7 +118,7 @@ function addHtml(employee) {
 
         let data = "";
         if (role === "Engineer"){
-            const github = employee.github();
+            const github = employee.getGithub();
             data = `<div class= "col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
             <h5 class="card-header">${name}<br /><br />Engineer</h5>
@@ -130,7 +130,7 @@ function addHtml(employee) {
             </div>
           </div>`;
         } else if(role=== "Intern" ){
-            const school = exployee.getSchool();
+            const school = employee.getSchool();
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
             <h5 class="card-header">${name}<br /> <br /> Intern</h5>
@@ -142,7 +142,7 @@ function addHtml(employee) {
             </div>
            </div>`;
         } else if (role === "Manager"){
-            const officeNumber = employee.officeNumber();
+            const officeNumber = employee.getOfficeNumber();
             data = `<div class= "col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
             <h5 class="card-header">${name}<br /><br />Engineer</h5>
