@@ -73,9 +73,13 @@ THEN I exit the application, and the HTML is generated
 
 ![Successful Testing](./assets/images/Testing.png)
 
+
+
 ## Running This App
 - open index.js in your terminal!
 - run npm i to initialize dependencies if you haven't already done so 
 - run node index to prompt the generator for questions
 - fill out information and the app will create your team profile!
+
+[Application running video can be found here!](https://drive.google.com/file/d/1rqkfoXw6VCy9-XqckANZA8yYJdsNreh9/view?usp=sharing)
 
