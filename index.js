@@ -125,7 +125,7 @@ function addHtml(employee) {
             <ul class="list-group list-group-flush"> 
                 <li class="list-group-item"style="background-color:#FFA62B">ID: ${id} </li>
                 <li class="list-group-item"style="background-color:#82C0CC"> Email: ${email}</li>
-                <li class="list-group-item"style="background-color: #489fB5">Github: ${github}</li>
+                <li class="list-group-item"style="background-color: #489fB5"><a href="https://github.com/${github}" style="color:black;">GitHub: ${github}</a></li>
             </ul>
             </div>
           </div>`;
