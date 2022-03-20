@@ -25,7 +25,7 @@ A simple application designed to make building your team profile a smoother, sim
 
 
 ## Screenshots
-![This is how your page could look](./assets/images/Project-One.png)
+![This is how your page could look](./assets/images/team-profile.png)
 
 ## Technoloy Used
 - HTML
@@ -37,7 +37,7 @@ A simple application designed to make building your team profile a smoother, sim
 
 
 ## Status
-- This project is incomplete as of March 9th
+- This project is complete as of March 20th
 
 ## Inspired By 
 - GT Coding Bootcamp Team Profile Generator Homework
@@ -69,6 +69,9 @@ THEN I exit the application, and the HTML is generated
 - run npm i to initialize dependences (dependencies include inquirer, fs, and jest)
 - run npm install --save-dev jest to install our tester
 - npm run test to check that it works properly!
+
+
+![Successful Testing](./assets/images/Testing.png)
 
 ## Running This App
 - open index.js in your terminal!
