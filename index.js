@@ -44,7 +44,7 @@ function addEmployee() {
         roleInfo = "Github Username";
       } else if (role === "Intern") {
         roleInfo = "school";
-      } else {
+      } else if (role === "Manager") {
         roleInfo = "Office Number";
       }
       //new inquirer prompt for further details from specfic roles
@@ -93,8 +93,8 @@ function startHtml() {
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Team Profile</title>
     </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark mb-5">
+    <body style= "background-color:#16697A">
+    <nav class="navbar mb-5" style="background-color:#FFA62B">
             <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
         </nav>
         <div class="container">
@@ -121,11 +121,11 @@ function addHtml(employee) {
             const github = employee.getGithub();
             data = `<div class= "col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
-            <h5 class="card-header">${name}<br /><br />Engineer</h5>
+            <h5 style="background-color: #EDE7E3;" class="card-header">${name}<br /><br />Engineer</h5>
             <ul class="list-group list-group-flush"> 
-                <li class="list-group-item">ID: ${id} </li>
-                <li class="list-group-item"> Email: ${email}</li>
-                <li class="list-group-item">Github: ${github}</li>
+                <li class="list-group-item"style="background-color:#FFA62B">ID: ${id} </li>
+                <li class="list-group-item"style="background-color:#82C0CC"> Email: ${email}</li>
+                <li class="list-group-item"style="background-color: #489fB5">Github: ${github}</li>
             </ul>
             </div>
           </div>`;
@@ -133,11 +133,11 @@ function addHtml(employee) {
             const school = employee.getSchool();
             data = `<div class="col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
-            <h5 class="card-header">${name}<br /> <br /> Intern</h5>
+            <h5 style="background-color: #EDE7E3;"class="card-header">${name}<br /> <br /> Intern</h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${id} </li>
-                <li class="list-group-item">Email: ${email} </li>
-                <li class="list-group-item">School: ${school}</li>
+                <li class="list-group-item"style="background-color:#FFA62B">ID: ${id} </li>
+                <li class="list-group-item"style="background-color:#82C0CC">Email: ${email} </li>
+                <li class="list-group-item"style="background-color: #489fB5">School: ${school}</li>
             </ul>
             </div>
            </div>`;
@@ -145,11 +145,11 @@ function addHtml(employee) {
             const officeNumber = employee.getOfficeNumber();
             data = `<div class= "col-6">
             <div class="card mx-auto mb-3" style="width: 16rem">
-            <h5 class="card-header">${name}<br /><br />Engineer</h5>
+            <h5 style="background-color: #EDE7E3;"class="card-header">${name}<br /><br />Engineer</h5>
             <ul class="list-group list-group-flush"> 
-                <li class="list-group-item">ID: ${id} </li>
-                <li class="list-group-item"> Email: ${email}</li>
-                <li class="list-group-item">Office Number: ${officeNumber}</li>
+                <li class="list-group-item"style="background-color:#FFA62B">ID: ${id} </li>
+                <li class="list-group-item"style="background-color:#82C0CC"> Email: ${email}</li>
+                <li class="list-group-item"style="background-color: #489fB5">Office Number: ${officeNumber}</li>
             </ul>
             </div>
           </div>`;
@@ -171,7 +171,7 @@ function finishHtml() {
 </body>
 </html>`;
 
-    fs.appendFile("./output/team.html", html, function (err) {
+    fs.appendFile("./dist/team.html", html, function (err) {
         if (err) {
             console.log(err);
         };
